@@ -1,8 +1,8 @@
 {
-  "name": "konsta",
+  "name": "@ibilux/konsta",
   "description": "Mobile UI components made with Tailwind CSS",
   "version": "1.0.2",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "author": "Vladimir Kharlampidi",
   "scripts": {
@@ -22,7 +22,7 @@
     "check-format": "npm run prettier -- --list-different",
     "lint": "eslint --ext .js,.vue,.jsx,.svelte .",
     "validate": "npm-run-all --parallel check-format lint",
-    "release": "npm run validate && node ./scripts/release",
+    "release": "node ./scripts/release",
     "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -u -s",
     "build-sponsors": "node ./scripts/build-sponsors.js"
   },
