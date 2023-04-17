@@ -1,5 +1,5 @@
 {
-  "name": "konsta/react",
+  "name": "@ibilux/konsta/react",
   "private": true,
   "main": "./cjs/konsta-react.js",
   "jsnext:main": "./esm/konsta-react.js",

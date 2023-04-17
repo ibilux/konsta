@@ -1,5 +1,5 @@
 {
-  "name": "konsta/vue",
+  "name": "@ibilux/konsta/vue",
   "private": true,
   "main": "./konsta-vue.js",
   "jsnext:main": "./konsta-vue.js",
