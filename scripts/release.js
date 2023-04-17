@@ -113,11 +113,11 @@ async function release() {
 
   // eslint-disable-next-line
   if (options.beta) {
-    await exec.promise('cd ./package && npm publish --tag beta');
+    await exec.promise('cd ./package && npm publish --registry=https://npm.pkg.github.com/ --tag beta');
   } else if (options.alpha || options.next) {
-    await exec.promise('cd ./package && npm publish --tag next');
+    await exec.promise('cd ./package && npm publish --registry=https://npm.pkg.github.com/ --tag next');
   } else {
-    await exec.promise('cd ./package && npm publish');
+    await exec.promise('cd ./package && npm publish --registry=https://npm.pkg.github.com/');
   }
   await exec.promise('npm run build-react-ks');
   await exec.promise('npm run build-vue-ks');
